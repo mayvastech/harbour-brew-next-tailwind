@@ -12,20 +12,29 @@ export default function Navbar() {
           Harbour Brew
         </a>
 
-        <div className="hidden items-center gap-8 text-sm font-semibold text-orange-950/70 md:flex">
-          {links.map((link) => (
-            <a key={link.href} href={link.href} className="transition hover:text-orange-950">
-              {link.label}
-            </a>
-          ))}
-        </div>
+        <div className="flex items-center gap-3">
+          <div className="hidden items-center gap-8 text-sm font-semibold text-orange-950/70 md:flex">
+            {links.map((link) => (
+              <a key={link.href} href={link.href} className="transition hover:text-orange-950">
+                {link.label}
+              </a>
+            ))}
+          </div>
 
-        <a
-          href="#visit"
-          className="rounded-full bg-orange-950 px-5 py-2.5 text-sm font-bold text-orange-50 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg"
-        >
-          Find us
-        </a>
+          <a
+            href="#menu"
+            className="rounded-full border border-orange-950/15 px-4 py-2 text-sm font-bold text-orange-950 transition hover:bg-orange-950 hover:text-orange-50 md:hidden"
+          >
+            Menu
+          </a>
+
+          <a
+            href="#visit"
+            className="rounded-full bg-orange-950 px-5 py-2.5 text-sm font-bold text-orange-50 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg"
+          >
+            Find us
+          </a>
+        </div>
       </nav>
     </header>
   );
