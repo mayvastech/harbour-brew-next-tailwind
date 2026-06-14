@@ -1,7 +1,7 @@
 const links = [
-  { href: "#menu", label: "Menu" },
-  { href: "#story", label: "Story" },
-  { href: "#visit", label: "Visit" },
+  { href: "#menu", label: "Menu", mobile: true },
+  { href: "#story", label: "Story", mobile: false },
+  { href: "#visit", label: "Visit", mobile: false },
 ];
 
 export default function Navbar() {
